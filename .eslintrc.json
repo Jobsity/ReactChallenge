@@ -1,7 +1,7 @@
 {
     "extends": "react-app",
     "rules": {
-        "react-hooks/exhaustive-deps": "off",
+        "react-hooks/exhaustive-deps": "warn",
         "comma-dangle": ["error", "never"],
         "object-curly-newline": ["error", { "consistent": true, "minProperties": 7 }],
         "no-alert": "error",
