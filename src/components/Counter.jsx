@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Button from "./Button";
 
 function Counter() {
@@ -7,25 +6,23 @@ function Counter() {
 
   return (
     <div>
-      <h3 role="counter-heading">Counter: {count}</h3>
-      <button
+      <h3>Counter: {count}</h3>
+      <Button
         onClick={() => {
           setCount(count + 1);
         }}
       >
         Increment
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={() => {
           setCount(count - 1);
         }}
       >
         Decrement
-      </button>
+      </Button>
     </div>
   );
 }
-
-Counter.propTypes = {};
 
 export default Counter;
