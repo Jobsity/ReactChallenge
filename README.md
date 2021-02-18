@@ -10,7 +10,8 @@ This project is designed to test your knowledge of front-end web technologies an
 
 The goal of this exercise is to create a demo calendar application using React.
 
-You should start by rendering a single month view of a calendar for the current month, along the lines of the illustration below
+You should start by rendering a single month view of a calendar for the current month, along the lines of the illustration below:
+<div align="center">![](src/assets/CalendarSample.png)</div>
 
 ## Mandatory features
  - Ability to add "*reminders*" (max. 30 characters) for a day and time specified by the user. Also, include a city.
