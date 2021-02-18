@@ -1,6 +1,7 @@
 <div align="center">
     <img src="https://github.com/Jobsity/ReactChallenge/blob/main/src/assets/jobsity_logo_small.png"/>
 </div>
+
 # Front-end Javascript Challenge
 
 ## Description
