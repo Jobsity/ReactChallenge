@@ -1,4 +1,4 @@
-<div align="center">![](https://github.com/Jobsity/ReactChallenge/blob/main/src/assets/jobsity_logo_small.png)</div>
+<div align="center">![](src/assets/jobsity_logo_small.png)</div>
 # Front-end Javascript Challenge
 
 ## Description
