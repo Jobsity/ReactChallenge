@@ -5,8 +5,8 @@ function Counter() {
   const [count, setCount] = React.useState(0);
 
   return (
-    <div>
-      <h3>Counter: {count}</h3>
+    <div className="counter">
+      <h3 className="heading">Counter: {count}</h3>
       <Button
         onClick={() => {
           setCount(count + 1);
