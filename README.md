@@ -27,7 +27,6 @@ You should start by rendering a single month view of a calendar for the current 
 
 - Expand the calendar to support more than the current month or year.
 - Properly handle overflow when multiple reminders appear on the same date.
-- Include the ability to delete one or all the reminders for a specific day.
 - Unit test the functionality: *Ability to add "*reminders*" (max. 30 characters) for a day and time specified by the user. Also, include a city.*
 
 ## Considerations
