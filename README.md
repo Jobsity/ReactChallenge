@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/Jobsity/ReactChallenge/blob/main/src/assets/jobsity_logo_small.png"/>
+    <img src="https://raw.githubusercontent.com/Jobsity/ReactChallenge/main/src/assets/jobsity_logo_small.png"/>
 </div>
 
 # Front-end Javascript Challenge
@@ -15,7 +15,7 @@ The goal of this exercise is to create a demo calendar application using React.
 
 You should start by rendering a single month view of a calendar for the current month, along the lines of the illustration below:
 <div align="center">
-    <img src="https://github.com/Jobsity/ReactChallenge/blob/main/src/assets/CalendarSample.png"/>
+    <img src="https://raw.githubusercontent.com/Jobsity/ReactChallenge/main/src/assets/CalendarSample.png"/>
 </div>
 
 ## Mandatory features
