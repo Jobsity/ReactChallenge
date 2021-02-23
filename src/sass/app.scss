@@ -1,11 +1,16 @@
+html,
 body {
   margin: 0;
-  padding: 0;
+  color: #555;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.4;
+
+  > div {
+    margin-top: 0;
+  }
 }
 
 code {
@@ -13,54 +18,40 @@ code {
     monospace;
 }
 
-// Reset default paddings
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  margin: 0;
-}
+h6 {
+  color: #222;
+  line-height: 1.1;
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  + * {
+    margin-top: 0.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+strong {
+  color: #222;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin-top: 0.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.readme {
+  width: 800px;
+  margin: 2rem calc((100vw - 800px) / 2);
 }
 
 .counter {
@@ -68,12 +59,6 @@ p {
   $buttonBgLight: #325f8f;
   $buttonBgDark: #003268;
   $buttonTextColor: #e5ebf1;
-
-  .heading{
-    color: #323232;
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-  }
 
   button {
     display: inline-block;
@@ -95,17 +80,19 @@ p {
     border-radius: 0.8rem;
     -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.52);
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.52);
-   
 
     cursor: pointer;
-    transition: background ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    transition-property: background, transform;
 
     &:active,
     &:focus,
     &:hover {
       outline: none;
-      border: 2px $buttonBg solid;
       background: $buttonBgLight;
+    }
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
