@@ -25,10 +25,13 @@ The component below has a suite of tests to that could serve as guidance to unit
   return (
     <div className="readme">
       <ReactMarkdown allowDangerousHtml children={md} />
-      {md && <Counter limit={3}/>}
-
-      <h2>Use our existing route to create you calendar!</h2>
-      {md && <Link to='/calendar'>Go to Calendar page</Link>}
+      {md && (
+        <>
+          <Counter limit={3}/>
+          <h2>Use our existing route to create you calendar!</h2>
+          <Link to='/calendar'>Go to Calendar page</Link>
+        </>
+      )}
     </div>
   );
 }
