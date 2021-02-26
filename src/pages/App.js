@@ -1,4 +1,4 @@
-import Readme from "./components/Readme";
+import Readme from "../components/Readme";
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 
 // import main sass file
@@ -8,7 +9,9 @@ import './sass/app.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
