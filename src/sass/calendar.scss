@@ -1,0 +1,166 @@
+.calendar {
+    width: 50%;
+    //height: 150px;
+}
+.calendarTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid;
+    border-width: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.header {
+    //border: solid;
+    background-color:hsl(208, 100%, 40%);
+    color: white;
+    text-align: center;
+}
+.weekDay {
+    color: rgb(255, 255, 255);
+    background-color: hsl(208, 50%, 60%);
+    width: calc(100% / 7);
+    height: 15px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    font-size: 7px;
+}
+
+.day {
+    color: rgb(0, 0, 0);
+    font-size: 8px;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 40px;
+    padding-left: 3px;
+}
+
+.otherMonth {
+    color:rgb(164, 164, 164)
+}
+.currentDay {
+    color: blue
+}
+.weekend {
+    background-color: hsl(208, 50%, 90%);
+}
+.selectedDay {
+    background-color: rgba(248, 229, 122, 0.694);
+}
+
+.monthPopup {
+    position: absolute;
+    background-color: rgb(186, 186, 186) !important;
+    display: inline-block;
+    top: 60px;
+    left: 80px;    
+}
+
+.labelMonth {
+    appearance: none;
+    width: 100%;
+    background-color: hsl(208, 100%, 40%);
+    border:none;
+    text-align: center;
+    color: white
+    //background-color: magenta;
+}
+
+.a {
+    margin: 0px;
+    text-align: center;
+}
+
+.editorYear {
+    width: 100%;
+}
+
+.testDiv {
+    width: 100%;
+}
+
+.navMonth {
+    text-align: 100%;
+}
+.textTest {
+    font-weight: normal;
+    font-size: 5px;
+    margin: 0
+}
+.modal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.today {
+    color: rgb(0, 0, 255);
+}
+
+
+
+.button {
+    $buttonBg: #003874;
+    $buttonBgLight: #325f8f;
+    $buttonBgDark: #003268;
+    $buttonTextColor: #e5ebf1;
+  
+    button {
+      display: inline-block;
+      margin: 0,0,0,0;
+      //margin-right: 0.5rem;
+      //margin-bottom: 0.6rem;
+      padding: 0.2rem 1.2rem;
+      overflow: hidden;
+      color: $buttonTextColor;
+      font-weight: 500;
+      font-size: .6rem;
+      line-height: 1.2rem;
+      letter-spacing: 0.0325rem;
+      text-transform: uppercase;
+      text-decoration: none;
+  
+      background: $buttonBg;
+      border: none;
+      border-color: none;
+      border-radius: 0.8rem;
+      -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.52);
+      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.52);
+  
+      cursor: pointer;
+      transition: all ease-in-out 0.3s;
+      transition-property: background, transform;
+  
+      &:active,
+      &:focus,
+      &:hover {
+        outline: none;
+        background: $buttonBgLight;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .label {
+      font-weight: bolder;
+      text-transform: uppercase;
+  }
+
+  .modalColumn {
+      margin: 0
+  }
+  .newReminder {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    color:  rgb(255, 255, 255);
+  }

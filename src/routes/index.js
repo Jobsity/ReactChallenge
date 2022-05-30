@@ -1,17 +1,17 @@
-import App from '../pages/App';
-import Calendar from '../pages/Calendar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Routes = [
-  {
-    path: '/',
-    component: App,
-    exact: true
-  },
-  {
-    path: '/calendar',
-    component: Calendar,
-    exact: true
-  }
-];
+import App from "../pages/App";
+import Calendar from "../pages/Calendar";
 
-export default Routes;
+function routes() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/calendar" element={<Calendar />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default routes;

@@ -1,8 +1,9 @@
-import Counter from "./Counter";
 import { render, fireEvent, screen } from "@testing-library/react";
 
+import Counter from "./Counter";
+
 test("Counter component", () => {
-  render(<Counter limit={5}/>);
+  render(<Counter limit={5} />);
   expect(screen.getByText(/^counter:/i)).toHaveTextContent("Counter: 0");
 
   fireEvent.click(screen.getByText(/increment/i));
