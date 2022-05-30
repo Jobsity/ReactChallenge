@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function Calendar(props) {
-  // your calendar implementation Goes here!
-  // Be creative 
-  return (
-    <div className="container">
-        <h1>Calendar</h1>
-    </div>
-  )
+import CalendarComponent from "../components/Calendar";
+
+export default class Calendar extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h2>Calendar</h2>
+        <CalendarComponent/>
+      </div>
+      
+    );
+  }
 }
-
-export default Calendar;

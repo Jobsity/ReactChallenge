@@ -1,5 +1,7 @@
 import React from "react";
+
 import PropTypes from "prop-types";
+
 import Button from "./Button";
 
 function Counter({ limit }) {
@@ -30,7 +32,7 @@ function Counter({ limit }) {
 }
 
 Counter.propTypes = {
-  limit: PropTypes.number
+  limit: PropTypes.number,
 };
 
 export default Counter;

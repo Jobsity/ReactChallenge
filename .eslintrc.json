@@ -1,10 +1,35 @@
 {
-    "extends": "react-app",
-    "rules": {
-        "react-hooks/exhaustive-deps": "warn",
-        "comma-dangle": ["error", "never"],
-        "object-curly-newline": ["error", { "consistent": true, "minProperties": 7 }],
-        "no-alert": "error",
-        "no-console": "warn"
-    }
+  "extends": "react-app"
+  /*,
+  "plugins": ["prettier", "eslint-plugin-import-helpers"],
+  "rules": {
+    "prettier/prettier": ["error",
+    {
+      "endOfLine": "auto"
+    }],
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
+    "object-curly-newline": [
+      "error",
+      { "consistent": true, "minProperties": 7 }
+    ],
+    "no-alert": "error",
+    "no-console": "warn",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          "/^@shared/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
+  }*/
 }

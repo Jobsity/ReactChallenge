@@ -1,0 +1,13 @@
+include:
+  - template: Code-Quality.gitlab-ci.yml
+
+code_quality:
+  services:            # Shut off Docker-in-Docker
+  tags:
+    - challenge     # Set this job to only run on our new specialized runner
+code_quality_html:
+  extends: code_quality
+  variables:
+    REPORT_FORMAT: html
+  artifacts:
+    paths: [gl-code-quality-report.html]
